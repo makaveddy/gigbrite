@@ -18,6 +18,10 @@ class SignupNav extends React.Component {
                         </a>
                        
                     </li>
+                    <li>
+                        <img className='searchbar-form' src={SearchformURL} alt="" />
+
+                    </li>
 
                     <li className='navbar-button'>
                         <a href="#/signin/">Sign In</a>
