@@ -8,11 +8,6 @@ import NavContainer from '../components/nav/nav_container';
 
 const App = () => (
     <div>
-        <header>
-            
-            {/* <NavContainer /> */}
-        </header>
-
         <Route exact path="/signin" component={EmailFormContainer} />
         <AuthRoute exact path="/signin/login" component={SessionFormContainer} />
         <AuthRoute exact path="/signin/signup" component={SignupFormContainer} />

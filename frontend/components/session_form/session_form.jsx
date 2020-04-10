@@ -1,4 +1,5 @@
 import React from 'react';
+import SignupNavContainer from '../nav/signup_nav_container';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -36,34 +37,39 @@ class SessionForm extends React.Component {
 
     render() {
         return (
-            <div className="login-form-container">
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to GigBrite!
-                    <br />
-                    Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                    <div className="login-form">
+            <>
+                <header>
+                    <SignupNavContainer />
+                </header>
+                <div className="login-form-container">
+                    <form onSubmit={this.handleSubmit} className="login-form-box">
+                        Welcome to GigBrite!
                         <br />
-                        <label>Email:
-                            <input type="text"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                                className="login-input"
-                            />
-                        </label>
+                        Please {this.props.formType} or {this.props.navLink}
+                        {this.renderErrors()}
+                        <div className="login-form">
+                            <br />
+                            <div className="login-input">
+                                <span>Email address</span>
+                                <input type="text"
+                                    value={this.state.email}
+                                    onChange={this.update('email')}
+                                />
+                            </div>
                         <br />
-                        <label>Password:
-                            <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="login-input"
-                            />
-                        </label>
+                            <div className="login-input">
+                                <span>Password</span>
+                                <input type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                />
+                            </div>
                         <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
-                    </div>
-                </form>
-            </div>
+                            <input className="session-submit" type="submit" value={this.props.formType} />
+                        </div>
+                    </form>
+                </div>
+            </>
         );
     }
 }

@@ -80,8 +80,13 @@ class EmailForm extends React.Component {
                                             onChange={this.update('email')}
                                     />
                             </div>
-                            <br/>    
-                            <input className="session-submit" type="submit" value='Get Started' />
+                            <br/>   
+                            <div className="hover">
+                                <input className="session-submit" 
+                                    type="submit" 
+                                    value='Get Started' 
+                                />
+                            </div> 
                         </div>
                     </form>
                 </div>
