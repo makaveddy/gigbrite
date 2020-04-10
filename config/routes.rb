@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 namespace :api, defaults: {format: :json} do
   resources :users
   resource :session
+  match 'verify_user', to: 'users#verify', via: [:post]
 end
 root "static_pages#root"
 end
