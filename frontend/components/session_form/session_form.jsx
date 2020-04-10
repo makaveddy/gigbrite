@@ -38,15 +38,21 @@ class SessionForm extends React.Component {
     render() {
         return (
             <>
-                <header>
+                {/* <header>
                     <SignupNavContainer />
                 </header>
+                <div className="email-form">
+                    <h3 className="email-form-head">
+                        {<img className="email-logo" src={formLogoURL} alt="" />}
+                        <div className='h1'>
+                            Sign up or log in
+                    </div>
+                        <div className='h2'>
+                            Use email to get started.
+                    </div>
+                    </h3>
                 <div className="login-form-container">
                     <form onSubmit={this.handleSubmit} className="login-form-box">
-                        Welcome to GigBrite!
-                        <br />
-                        Please {this.props.formType} or {this.props.navLink}
-                        {this.renderErrors()}
                         <div className="login-form">
                             <br />
                             <div className="login-input">
@@ -68,6 +74,51 @@ class SessionForm extends React.Component {
                             <input className="session-submit" type="submit" value={this.props.formType} />
                         </div>
                     </form>
+                </div>
+            </>
+             */}
+
+                <header>
+                    <SignupNavContainer />
+                </header>
+                <div className="email-form">
+                    <h3 className="email-form-head">
+                        {<img className="email-logo" src={WelcomeLogoURL} alt="" />}
+                        <div className='h1'>
+                            Welcome back
+                    </div>
+                        <div className='h2'>
+                            Please enter your password to log in.
+                    </div>
+                    </h3>
+                    <div className="login-form-container">
+                        <form onSubmit={this.handleSubmit} className="login-form-box">
+                            <div className="login-form">
+                                <br />
+                                <div className="login-input">
+                                    <span>Email address</span>
+                                    <input type="text"
+                                        value={this.state.email}
+                                        onChange={this.update('email')}
+                                    />
+                                </div>
+                                <div className="login-input">
+                                    <span>Password</span>
+                                    <input type="password"
+                                        value={this.state.password}
+                                        onChange={this.update('password')}
+                                    />
+                                </div>
+                                <br />
+                                <div className="hover">
+                                    <input className="session-submit"
+                                        type="submit"
+                                        value='Log In'
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </>
         );
