@@ -18,7 +18,12 @@ module.exports = {
                         presets: ['@babel/env', '@babel/react']
                     }
                 },
-            }
+            },
+            // {
+            //     include: SRC,
+            //     test: /\.(eot|gif|otf|png|svg|ttf|woff)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            //     use: ['file-loader'],
+            // },
         ]
     },
     devtool: 'source-map',
