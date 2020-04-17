@@ -6014,3 +6014,10 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 524ms (Views: 523.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-04-17 10:44:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 500ms (Views: 499.6ms | ActiveRecord: 0.0ms)
+
+

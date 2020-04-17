@@ -144,9 +144,7 @@ class SessionForm extends React.Component {
                         </form>
                     </div>
                 </div>
-                <footer>
-                    <img src={FooterURL} alt="" />
-                </footer>
+                
             </>
         );
     }
