@@ -6,6 +6,7 @@
   padding-right: 12px;
   padding-bottom: 6px;
   margin: 20px;
+  margin-bottom: 3px;
   border-radius: 2px;
   text-align: left;
 }
@@ -101,3 +102,14 @@
 .searchbar-form {
     padding-top: 13px;
 }
+
+.error-messages {
+    font-size: 14px;
+    font-family: "Neue Plak",-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
+    color: red;
+    padding-left: 20px;
+}
+
+// #text {
+//     display: hidden;
+// }

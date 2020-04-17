@@ -6,9 +6,11 @@ class SessionForm extends React.Component {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            errors: []
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.renderError = this.renderError.bind(this);
     }
 
     update(field) {
@@ -17,23 +19,42 @@ class SessionForm extends React.Component {
         });
     }
 
+    componentWillUnmount() {
+        if (this.props.errorslength) {
+            this.props.clearErrors();
+        }
+    }
+
+
+    renderError(message) {
+        let allErrors = this.props.errors.concat(this.state.errors)
+        if (allErrors.includes(message)) {
+            return (
+                <div>
+                    <span className="error-messages">{message}</span>
+                </div>
+            )
+        }
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
+        debugger
         this.props.processForm(user);
     }
 
-    renderErrors() {
-        return (
-            <ul>
-                {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
-            </ul>
-        );
-    }
+    // renderErrors() {
+    //     return (
+    //         <ul>
+    //             {this.props.errors.map((error, i) => (
+    //                 <li key={`error-${i}`}>
+    //                     {error}
+    //                 </li>
+    //             ))}
+    //         </ul>
+    //     );
+    // }
 
     render() {
         return (
@@ -92,6 +113,7 @@ class SessionForm extends React.Component {
                     </div>
                     </h3>
                     <div className="login-form-container">
+
                         <form onSubmit={this.handleSubmit} className="login-form-box">
                             <div className="login-form">
                                 <br />
@@ -102,6 +124,7 @@ class SessionForm extends React.Component {
                                         onChange={this.update('email')}
                                     />
                                 </div>
+                                {this.renderError("Invalid email/password combination")}
                                 <div className="login-input">
                                     <span>Password</span>
                                     <input type="password"
@@ -109,6 +132,7 @@ class SessionForm extends React.Component {
                                         onChange={this.update('password')}
                                     />
                                 </div>
+                                {this.renderError("Invalid email/password combination")}
                                 <br />
                                 <div className="hover">
                                     <input className="session-submit"
@@ -120,6 +144,7 @@ class SessionForm extends React.Component {
                         </form>
                     </div>
                 </div>
+                
             </>
         );
     }

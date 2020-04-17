@@ -4,8 +4,26 @@
     padding-left: 160px;
     padding-right: 16px;
     padding-top: 100px;
+    
 }
 
 .searchbar {
     padding-top: 5px;
+}
+
+.category {
+    display: flex;
+    padding-left: 160px;
+    padding-top: 100px;
+}
+
+.events-placeholder {
+    width: 905px;
+    height: 905px;
+    padding-left: 160px;
+}
+
+.events-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
 }

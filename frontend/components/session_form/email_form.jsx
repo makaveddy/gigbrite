@@ -8,10 +8,12 @@ class EmailForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: ''
+            email: '',
+            errorMessage: ''
             
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demologin = this.demologin.bind(this);
     }
 
     update(field) {
@@ -20,21 +22,43 @@ class EmailForm extends React.Component {
         });
     }
 
+    componentWillUnmount() {
+        if (this.props.errorslength) {
+            this.props.clearErrors();
+        }
+    }
+
+    demologin(e) {
+        
+        e.preventDefault();
+        this.props.login({ email: "test@email.com", password: "testing" })
+        this.props.history.push("/")
+        
+    }
+
    
 
     handleSubmit(e) {
         e.preventDefault();
-        const props = this.props;
-        const successCB = user => {
+        
+        if (this.state.email == '') {
+            debugger
+            this.state.errorMessage = 'Please enter valid'
+            
+        } else {
+
+            const props = this.props;
+            const successCB = user => {
             // debugger
-            if (user) {
+                if (user) {
                 // return <Redirect to='/signin/login' />
-                props.history.push('/signin/login');
-            } else {
-                props.history.push('/signin/signup')
+                    props.history.push('/signin/login');
+                } else {
+                    props.history.push('/signin/signup')
+                };
             };
-        };
-        props.verify(this.state.email).then(successCB);
+            props.verify(this.state.email).then(successCB);
+        }
     }
 
 
@@ -70,9 +94,13 @@ class EmailForm extends React.Component {
                     </div>
                 </h3>
                 <div className="login-form-container">
+                       
+
+
                     <form onSubmit={this.handleSubmit} className="login-form-box">
                         <div className="login-form">
                          <br />
+                         
                             <div className="login-input">
                                 <span>Email address</span>
                                     <input type="text"
@@ -80,12 +108,23 @@ class EmailForm extends React.Component {
                                             onChange={this.update('email')}
                                     />
                             </div>
+                                <div className="login-error">
+                                    {this.state.errorMessage}
+                                </div>
+                        
                             <br/>   
                             <div className="hover">
                                 <input className="session-submit" 
                                     type="submit" 
                                     value='Get Started' 
                                 />
+                            </div> 
+                            <div className="hover">
+                                    <input className="session-submit" 
+                                        type="submit" 
+                                        value="Demo Log In" 
+                                        onClick={this.demologin} />
+                                
                             </div> 
                         </div>
                     </form>

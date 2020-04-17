@@ -9,8 +9,15 @@ class SignupForm extends React.Component {
             first_name: '',
             last_name: '',
             password: ''
+           
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        // this.renderError = this.renderError.bind(this);
+        this.handleEmail = this.handleEmail.bind(this);
+        this.handlePassword = this.handlePassword.bind(this);
+        this.handleFirstname = this.handleFirstname.bind(this);
+        this.handleLastname = this.handleLastname.bind(this);
+        
     }
 
     update(field) {
@@ -19,22 +26,69 @@ class SignupForm extends React.Component {
         });
     }
 
+    componentWillUnmount() {
+        if (this.props.errorslength) {
+            this.props.clearErrors();
+        }
+    }
+
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        if (this.errors) {
+            
+        } else {
+
+            this.props.processForm(user);
+        }
     }
 
-    renderErrors() {
-        return (
-            <ul>
-                {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
-            </ul>
-        );
+    handleEmail(message) {
+        let allErrors = this.props.errors
+        // debugger
+        if (allErrors.includes(message)) {
+            debugger
+            return (
+                <div>
+                    <span className="error-messages">{message}</span>
+                </div>
+            )
+        }
+    }
+    handlePassword(message) {
+        let allErrors = this.props.errors
+        // debugger
+        if (allErrors.includes(message)) {
+            debugger
+            return (
+                <div>
+                    <span className="error-messages">{message}</span>
+                </div>
+            )
+        }
+    }
+    handleFirstname(message) {
+        let allErrors = this.props.errors
+        // debugger
+        if (allErrors.includes(message)) {
+            return (
+                <div>
+                    <span className="error-messages">{message}</span>
+                </div>
+            )
+        }
+    }
+
+    handleLastname(message) {
+        let allErrors = this.props.errors
+        if (allErrors.includes(message)) {
+            return (
+                <div>
+                    <span className="error-messages">{message}</span>
+                </div>
+            )
+        }
     }
 
     render() {
@@ -99,6 +153,7 @@ class SignupForm extends React.Component {
                     </div>
                 </h3>
                 <div className="login-form-container">
+
                     <form onSubmit={this.handleSubmit} className="login-form-box">
                         <div className="login-form">
                             <br />
@@ -109,6 +164,7 @@ class SignupForm extends React.Component {
                                     onChange={this.update('email')}
                                 />
                             </div>
+                                {this.handleEmail("Email can't be blank")}
                             <div className="login-input">
                                 <span>First Name</span>
                                 <input type="text"
@@ -116,6 +172,7 @@ class SignupForm extends React.Component {
                                     onChange={this.update('first_name')}
                                 />
                             </div>
+                                {this.handleFirstname("First name can't be blank")}
                             <div className="login-input">
                                 <span>Last Name</span>
                                 <input type="text"
@@ -123,6 +180,7 @@ class SignupForm extends React.Component {
                                     onChange={this.update('last_name')}
                                 />
                             </div>
+                                {this.handleLastname("Last name can't be blank")}
                             <div className="login-input">
                                 <span>Password</span>
                                 <input type="password"
@@ -130,6 +188,7 @@ class SignupForm extends React.Component {
                                     onChange={this.update('password')}
                                 />
                             </div>
+                                {this.handlePassword("Password is too short (minimum is 6 characters)")}
                             <br />
                             <div className="hover">
                                 <input className="session-submit"

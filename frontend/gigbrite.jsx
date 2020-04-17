@@ -3,6 +3,8 @@ import ReactDom from "react-dom";
 import configureStore from "./store/store";
 import Root from "./components/root";
 
+import {fetchEvent, fetchEvents}from '../frontend/util/event_api_util';
+
 document.addEventListener(`DOMContentLoaded`, () => {
     const root = document.getElementById(`root`);
     let store;
@@ -22,6 +24,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     window.getState = store.getState;
     window.dispatch = store.dispatch;
+    window.store = store;
+    window.fetchEvent = fetchEvent;
+    window.fetchEvents = fetchEvents;
 
 
     ReactDom.render(<Root store={store}></Root>, root);
