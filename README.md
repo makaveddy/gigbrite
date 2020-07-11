@@ -1,24 +1,17 @@
-# README
+# Gigbrite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Gigbrite is an Eventbrite clone that allows a user to create/browse events. A user can also register to an event. 
+http://gigbrite.herokuapp.com/#/
 
-Things you may want to cover:
+Key MVP's:
 
-* Ruby version
+* User Auth
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Technologies
+  * React
+  * Redux
+  * Ruby on Rails
+  * PostgreSQl
+  * jQuery-rails
+  * CSS
+  * Heroku
