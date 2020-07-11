@@ -8,85 +8,68 @@ class EventIndex extends React.Component {
         super(props);
     }
 
-    // componentDidMount() {
-    //     // debugger
-    //     this.props.requestEvents();
-    // }
+    componentDidMount() {
+        // debugger
+        this.props.requestEvents();
+    }
 
     
 
     render() {
-        // debugger
+        console.log("in render");
+        if (this.props.eventList.length === 0 ) {return null};
+        console.log('past the null')
+
         return (
             <>
             <header>
                 <NavContainer/>
             </header>
             <div className="events-placeholder">
-                <img src={EventsURL} alt=""/>
+                {/* <img src={EventsURL} alt=""/> */}
+                {this.props.eventList.map(eventItem => {
+                        let picture = "";
+                        if (eventItem.title == "Aunt May Bday") {
+                            picture = window.MaybdayURL
+                        } else if (eventItem.title == "Gamma Ray Ted Talk") {
+                            picture = window.TedURL
+                        } else if (eventItem.title == "July 4th Party") {
+                            picture = window.CaptainURL
+                        } else if (eventItem.title == "stark expo") {
+                            picture = window.StarkURL
+                        } else if (eventItem.title == "Baxter Reopening") {
+                            picture = window.BaxterURL
+                        } else if (eventItem.title == "App Academy Grad Party!") {
+                            picture = window.AppacademyURL
+                        }
+
+                    return (
+                        
+                        <>
+                        <div className="event-box">
+                            <div className="event-img">
+                                <img src={picture} alt="" className="image"/>
+                            
+                            </div>
+                            <div className="event-info">
+                                <p className="event-time">
+                                {eventItem.start_time}
+                                </p>
+                                <p className="event-title">
+                                    {eventItem.title}
+                                </p>
+                            </div>
+
+                        </div>
+                        </>
+                    )
+                })}
             </div>
             <footer>
                 <img src={FooterURL} alt=""/>
             </footer>
-            {/* <br/>
-                <div className="main">
-                    <div className="main-left">
-                        <div className="left-top">
-                            <div className='left-top-image'>
-                                <img  src={AppacademyURL} alt="" />
-                            </div>
-                            <div>
-                                app academy grad party
-                            </div>
-                        </div>
-                        <div className="left-bottom">
-                            <div className='left-bottom-left'>
-                                <div className='left-bottom-left-image'>
-                                    <img src={StarkURL} alt="" />
-                                </div>
-                                <div>
-                                    stark expo event
-                                </div>
-                            </div>
-                            <div className='left-bottom-right'>
-                                <div className='left-bottom-right-image'>
-                                    <img src={TedURL} alt="" />
-                                </div>
-                                <div>
-                                    banner gamma talk
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="main-right">
-                        <div className="right-top">
-                            <div className='right-top-left'>
-                                <div className='right-top-left-image'>
-                                    <img src={MaybdayURL} alt=""  />
-                                </div>
-                                <div>
-                                    aunt may party
-                                </div>
-                            </div>
-                            <div className='right-top-right'>
-                                <div className='right-top-right-image'>
-                                    <img src={BaxterURL} alt="" />
-                                </div>
-                                <div>
-                                    baxter building reopening
-                                </div>
-                            </div>
-                        </div>
-                        <div className="right-bottom">
-                            <div className='right-bottom-image'>
-                                <img src={CaptainURL} alt=""  />
-                            </div>
-                            <div>
-                                captain america july 4 event
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+            <br/>
+              
             </>
         )
     

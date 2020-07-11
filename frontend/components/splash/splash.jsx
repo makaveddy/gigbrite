@@ -1,6 +1,6 @@
 import React from 'react';
 import NavContainer from '../nav/nav_container';
-import EventIndex from '../events/event_index';
+import EventIndexContainer from '../events/event_index_container';
 
 
 export const Splash = () => {
@@ -16,7 +16,7 @@ export const Splash = () => {
             <img src={CategoryURL} alt=""/>
         </div>
         <div>
-            <EventIndex/>
+            <EventIndexContainer/>
         </div>
         </>
     )

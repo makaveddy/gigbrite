@@ -4,12 +4,15 @@ import {requestEvents, requestEvent} from '../../actions/event_actions';
 import EventIndex from './event_index';
 
 const msp = (state) => {
+    // debugger
     return ({
-        events: state.entities.events
+        events: state.entities.events,
+        eventList: Object.values(state.entities.events)
     })
 }
 
 const mdp = (dispatch) => {
+    // debugger
     return ({
         requestEvents: () => dispatch(requestEvents())
     })
