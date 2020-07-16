@@ -8010,3 +8010,366 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for ::1 at 2020-07-11 17:36:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:36:48 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (19.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (32.3ms)
+Completed 200 OK in 45ms (Views: 25.3ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:45:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:11 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+Started GET "/gigbritelogo_form.png" for ::1 at 2020-07-11 17:45:11 -0400
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (27.6ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 3.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/gigbritelogo_form.png"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-07-11 17:45:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:12 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (9.4ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:45:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:24 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (8.6ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:45:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:25 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (9.7ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:45:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:25 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (10.3ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:45:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:26 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (9.2ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:45:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:45:26 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (9.5ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 17:47:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 43ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 17:47:02 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (10.1ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 18:05:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 18:05:34 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (12.1ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 18:05:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 18:05:35 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (8.5ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 18:05:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 18:05:36 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (8.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-07-11 18:05:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-11 18:05:41 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (9.7ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:58:12 -0400
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/eddyflores/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 1601ms (Views: 1600.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-16 11:58:14 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (8.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (56.7ms)
+Completed 200 OK in 97ms (Views: 48.2ms | ActiveRecord: 32.3ms)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:59:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-07-16 11:59:31 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (10.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.7ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (37.6ms)
+Completed 200 OK in 56ms (Views: 45.0ms | ActiveRecord: 10.9ms)
+
+
