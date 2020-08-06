@@ -1,0 +1,34 @@
+.event-show-box {
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.event-show-image-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.event-image img {
+    width: 663px;
+    height: 331px;
+}
+
+.event-details {
+    width: 331px;
+    height: 331px;
+    border: solid black;
+    background-color: lightgrey;
+}
+
+.event-summary {
+    display: flex;
+    flex-direction: row;
+}
+
+.event-info-details {
+    border: solid blue;
+}
+
+.event-time-info {
+    border: solid blue;
+}

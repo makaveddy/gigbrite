@@ -9595,3 +9595,640 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-08-06 12:33:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 565ms (Views: 562.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-08-06 12:33:45 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (7.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (29.2ms)
+Completed 200 OK in 41ms (Views: 33.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 12:34:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 418ms (Views: 417.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 12:39:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 440ms (Views: 440.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 12:41:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 424ms (Views: 423.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 12:41:02 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 12:41:02 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/show.json.jbuilder (12.5ms)
+Completed 200 OK in 36ms (Views: 22.7ms | ActiveRecord: 1.7ms)
+
+
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (16.6ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 12:50:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 365ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 12:50:18 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Started GET "/api/events" for ::1 at 2020-08-06 12:50:18 -0400
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/show.json.jbuilder (2.2ms)
+Completed 200 OK in 25ms (Views: 11.3ms | ActiveRecord: 3.7ms)
+
+
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (1.7ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/index.json.jbuilder (20.1ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:06:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 688ms (Views: 687.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:11:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 400ms (Views: 399.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:11:14 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Started GET "/api/events" for ::1 at 2020-08-06 13:11:14 -0400
+  [1m[36mEvent Load (11.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.6ms)
+  Rendered api/events/show.json.jbuilder (12.6ms)
+Completed 200 OK in 46ms (Views: 25.7ms | ActiveRecord: 12.3ms)
+
+
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (19.1ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:12:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 410ms (Views: 409.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:12:32 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:12:32 -0400
+Processing by Api::EventsController#show as JSON
+Processing by Api::EventsController#index as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (3.9ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+Completed 200 OK in 30ms (Views: 13.6ms | ActiveRecord: 10.1ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (27.3ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:16:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 92ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:16:58 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:16:58 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (2.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (1.0ms)
+  Rendered api/events/show.json.jbuilder (2.6ms)
+Completed 200 OK in 29ms (Views: 13.9ms | ActiveRecord: 3.7ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (31.0ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:18:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 77ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:18:04 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:18:04 -0400
+Processing by Api::EventsController#show as JSON
+Processing by Api::EventsController#index as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (4.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (3.1ms)
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 2.7ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (26.4ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:18:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:18:32 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:18:32 -0400
+Processing by Api::EventsController#index as JSON
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (3.2ms)
+Completed 200 OK in 32ms (Views: 13.2ms | ActiveRecord: 12.1ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (28.7ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:19:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:19:30 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:19:30 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (4.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendering api/events/show.json.jbuilder
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (7.0ms)
+Completed 200 OK in 37ms (Views: 19.5ms | ActiveRecord: 3.4ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (30.1ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:20:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 91ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-08-06 13:20:03 -0400
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:20:03 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  [1m[36mEvent Load (6.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (3.4ms)
+Completed 200 OK in 24ms (Views: 13.1ms | ActiveRecord: 6.0ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (28.5ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:20:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 85ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:20:18 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:20:18 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (11.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/show.json.jbuilder (3.4ms)
+Completed 200 OK in 29ms (Views: 14.0ms | ActiveRecord: 11.6ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (29.4ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:20:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 81ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:20:38 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:20:38 -0400
+Processing by Api::EventsController#index as JSON
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (4.1ms)
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 1.8ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (31.7ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:21:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 109ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:21:53 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:21:53 -0400
+Processing by Api::EventsController#show as JSON
+Processing by Api::EventsController#index as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (10.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (3.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (3.4ms)
+Completed 200 OK in 32ms (Views: 16.3ms | ActiveRecord: 10.5ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (31.4ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:22:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:22:28 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:22:28 -0400
+Processing by Api::EventsController#show as JSON
+Processing by Api::EventsController#index as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (2.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (3.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+Completed 200 OK in 26ms (Views: 15.8ms | ActiveRecord: 1.9ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (31.8ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:22:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 80ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:22:35 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:22:35 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (4.2ms)
+Completed 200 OK in 31ms (Views: 13.2ms | ActiveRecord: 2.8ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (21.6ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:23:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:23:25 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:23:25 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+Processing by Api::EventsController#show as JSON
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Parameters: {"id"=>"15"}
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  [1m[36mEvent Load (3.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.9ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (5.9ms)
+Completed 200 OK in 34ms (Views: 22.5ms | ActiveRecord: 3.9ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (40.5ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:23:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 99ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:23:37 -0400
+Started GET "/api/events" for ::1 at 2020-08-06 13:23:37 -0400
+Processing by Api::EventsController#index as JSON
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (6.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  [1m[36mEvent Load (4.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendering api/events/show.json.jbuilder
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/show.json.jbuilder (5.3ms)
+Completed 200 OK in 30ms (Views: 14.7ms | ActiveRecord: 6.4ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (30.9ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:24:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 412ms (Views: 412.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-08-06 13:24:52 -0400
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:24:52 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (2.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendering api/events/show.json.jbuilder
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/show.json.jbuilder (4.3ms)
+Completed 200 OK in 27ms (Views: 13.0ms | ActiveRecord: 3.3ms)
+
+
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.3ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (24.7ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 13:26:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2020-08-06 13:26:29 -0400
+Started GET "/api/events/15" for ::1 at 2020-08-06 13:26:29 -0400
+Processing by Api::EventsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:22
+  Rendering api/events/show.json.jbuilder
+Processing by Api::EventsController#index as JSON
+  Rendered api/events/_event.json.jbuilder (1.2ms)
+  Rendered api/events/show.json.jbuilder (10.4ms)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.5ms)
+  Rendered api/events/_event.json.jbuilder (0.2ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.4ms)
+  Rendered api/events/index.json.jbuilder (12.9ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 1.5ms)
+
+
