@@ -9,12 +9,18 @@ export const Splash = () => {
         <header>
             <NavContainer/>
         </header>
-        <div className='splash-image'>
-            <img src={SplashURL} alt=""/>
+        <div className="browse-container">
+            <div className='splash-image'>
+                <img src={SplashURL} alt="" id="main"/>
+            </div>
+            <div className='browse'>
+            </div>
+            
+
         </div>
-        <div className='category'>
+        {/* <div className='category'>
             <img src={CategoryURL} alt=""/>
-        </div>
+        </div> */}
         <div>
             <EventIndexContainer/>
         </div>

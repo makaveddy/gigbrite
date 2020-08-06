@@ -21,7 +21,7 @@ class Nav extends React.Component {
 
                         </li>
                         <li>
-                            <img className='searchbar'  src={SearchURL} alt="" />
+                            {/* <img className='searchbar'  src={SearchURL} alt="" /> */}
 
                         </li>
 
@@ -50,7 +50,7 @@ class Nav extends React.Component {
 
                         </li>
                         <li>
-                            <img className='searchbar' src={SearchURL} alt="" />
+                            {/* <img className='searchbar' src={SearchURL} alt="" /> */}
 
                         </li>
 

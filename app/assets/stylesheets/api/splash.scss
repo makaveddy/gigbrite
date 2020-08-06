@@ -1,10 +1,30 @@
 .splash-image {
-    width: 1023px;
-    height: 316px;
+    max-width: 280px;
+    max-height: 292px;
     padding-left: 160px;
     padding-right: 16px;
     padding-top: 100px;
+
+}
+
+.browse-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#main {
+    width: 480px;
+    height: 292px;
+    // padding-left: 550px;
+}
+
+.browse {
     
+    background-color: blue;
+    border: solid black;
+    width: 480px;
+    height: 292px;
 }
 
 .searchbar {

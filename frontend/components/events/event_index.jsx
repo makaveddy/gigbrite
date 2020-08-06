@@ -1,7 +1,7 @@
 import React from 'react';
 // import EventIndexContainer from './event_index_container';
 import NavContainer from '../nav/nav_container';
-
+import {Link} from 'react-router-dom';
 
 class EventIndex extends React.Component {
     constructor(props) {
@@ -47,6 +47,7 @@ class EventIndex extends React.Component {
                         
                         <>
                         <div className="event-box">
+                            <Link to={`/events/${eventItem.id}`}>
                             <div className="event-img">
                                 <img src={picture} alt="" className="image"/>
                             
@@ -59,7 +60,7 @@ class EventIndex extends React.Component {
                                     {eventItem.title}
                                 </p>
                             </div>
-
+                            </Link>
                         </div>
                         </>
                     )
