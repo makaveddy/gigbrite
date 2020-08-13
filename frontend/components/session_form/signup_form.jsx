@@ -203,7 +203,16 @@ class SignupForm extends React.Component {
                     </form>
                 </div>
             </div>
-                
+                <footer>
+                    <div className="foot-box">
+                        <div className="social-links">
+                            <a href="">{<i class="fa fa-github" aria-hidden="true"></i>}</a>
+                            <a href="">{<i class="fa fa-linkedin-square" aria-hidden="true"></i>}</a>
+                            <a href="">{<i class="fa fa-angellist" aria-hidden="true"></i>}</a>
+                            <a className="port" href="">Portfolio</a>
+                        </div>
+                    </div>
+                </footer>
             </>
         );
     }

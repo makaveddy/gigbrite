@@ -35,7 +35,7 @@ class EventIndex extends React.Component {
                             picture = window.TedURL
                         } else if (eventItem.title == "July 4th Party") {
                             picture = window.CaptainURL
-                        } else if (eventItem.title == "stark expo") {
+                        } else if (eventItem.title == "Stark expo") {
                             picture = window.StarkURL
                         } else if (eventItem.title == "Baxter Reopening") {
                             picture = window.BaxterURL
@@ -66,9 +66,16 @@ class EventIndex extends React.Component {
                     )
                 })}
             </div>
-            <footer>
-                <img src={FooterURL} alt=""/>
-            </footer>
+                <footer>
+                    <div className="foot-box">
+                        <div className="social-links">
+                            <a href="">{<i class="fa fa-github" aria-hidden="true"></i>}</a>
+                            <a href="">{<i class="fa fa-linkedin-square" aria-hidden="true"></i>}</a>
+                            <a href="">{<i class="fa fa-angellist" aria-hidden="true"></i>}</a>
+                            <a className="port" href="">Portfolio</a>
+                        </div>
+                    </div>
+                </footer>
             <br/>
               
             </>
