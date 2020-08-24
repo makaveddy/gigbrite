@@ -69,10 +69,10 @@ class EventIndex extends React.Component {
                 <footer>
                     <div className="foot-box">
                         <div className="social-links">
-                            <a href="">{<i class="fa fa-github" aria-hidden="true"></i>}</a>
-                            <a href="">{<i class="fa fa-linkedin-square" aria-hidden="true"></i>}</a>
-                            <a href="">{<i class="fa fa-angellist" aria-hidden="true"></i>}</a>
-                            <a className="port" href="">Portfolio</a>
+                            <a href="https://github.com/makaveddy">{<i class="fa fa-github" aria-hidden="true"></i>}</a>
+                            <a href="https://www.linkedin.com/in/eddy-flores-2794951a9/">{<i class="fa fa-linkedin-square" aria-hidden="true"></i>}</a>
+                            <a href="https://angel.co/u/eddy-flores">{<i class="fa fa-angellist" aria-hidden="true"></i>}</a>
+                            <a className="port" href="https://makaveddy.github.io/">Portfolio</a>
                         </div>
                     </div>
                 </footer>
