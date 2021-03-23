@@ -12,6 +12,17 @@ class Api::EventsController < ApplicationController
         # end
     end
 
+    def update
+        @event = Event.find(params[:id])
+
+        if @event && @event.update_attributes(event_params)
+            render 'api/events/show'
+        elsif !@event
+            render json: ['Event does not exist'], status: 400
+        else
+            render json: @event.errors.full_messages, status: 401
+        end
+    end
 
     def index
         @events = Event.all

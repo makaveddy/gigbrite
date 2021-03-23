@@ -14797,3 +14797,76 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/" for ::1 at 2021-03-23 11:46:29 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/95c1f592316df019/variables" for ::1 at 2021-03-23 11:46:29 -0400
+Started GET "/" for ::1 at 2021-03-23 11:47:15 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/31ab393cc8259ab0/variables" for ::1 at 2021-03-23 11:47:15 -0400
+Started GET "/" for ::1 at 2021-03-23 11:47:17 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/593dc1e73d307dae/variables" for ::1 at 2021-03-23 11:47:17 -0400
+Started GET "/" for ::1 at 2021-03-23 11:48:19 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/b5d37c2e09c39fd2/variables" for ::1 at 2021-03-23 11:48:19 -0400
+Started GET "/" for ::1 at 2021-03-23 11:49:01 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/f5021fd73916147f/variables" for ::1 at 2021-03-23 11:49:02 -0400
+Started GET "/" for ::1 at 2021-03-23 11:50:46 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/ec404afb2e535e1f/variables" for ::1 at 2021-03-23 11:50:46 -0400
+Started GET "/" for ::1 at 2021-03-23 15:33:58 -0400
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?:
+
+Started POST "/__better_errors/4e4d3a81644e45bc/variables" for ::1 at 2021-03-23 15:33:58 -0400
+Started GET "/" for ::1 at 2021-03-23 15:41:16 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/eddyflores/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 1833ms (Views: 1833.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/events" for ::1 at 2021-03-23 15:41:18 -0400
+Processing by Api::EventsController#index as JSON
+  Rendering api/events/index.json.jbuilder
+  [1m[36mEvent Load (4.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/api/events/index.json.jbuilder:1
+  Rendered api/events/_event.json.jbuilder (0.8ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/_event.json.jbuilder (0.1ms)
+  Rendered api/events/index.json.jbuilder (49.3ms)
+Completed 200 OK in 77ms (Views: 45.6ms | ActiveRecord: 22.9ms)
+
+
